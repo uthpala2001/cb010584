@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/form3.css">
+        <title>Booking</title>
+        <link rel="icon" type="image/png" href="./favicon-16x16.png">     
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" href="Wages\logo.png">
+        <link rel="mask-icon" href="favicons/android-chrome-200x200.png" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="topnav">
+                <img src="logo.png" class="logo">
+                <br> 
+    <section class="topnav">
+        <br>
+        <a href="home page.html">Home</a>
+        <a href="types of wild life attractions.html">Wild life attractions</a>
+        <a href="beaches page.html">Beaches</a>
+        <a class="active" href="activity page.html">Activities</a>
+        <a href="heritage locations.html">Heritage locations</a>
+        <a href="hotel contact page.html">Hotel details</a>
+        <a href="purches & donations.html">Shop</a>
+    </section>
+    <body>
+<br>
+<section class="for">
+    <!--Header-->
+    <header class="image" id="Home">
+        <section class="log">
+            <h1 class="middle">
+                <span class="middle white text"><b>Book your tickets now..</b></span>
+            </h1>
+        </section>
+    </header>
+</section>
+<br>
+    <form method="get">
+        <fieldset>
+            <legend>Personal details</legend>
+            <form>
+                <br>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email"><br><br>
+                <label for="tel.no.">Telephone Number</label>
+                <input type="text" id="tel.no." name="tel.no."><br><br>
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Choice of ticket</legend>
+            <form>
+                <br>
+                <input type="checkbox" id="tickettype" name="tickettype" value="tickettype">
+                <label for="localpass">Local pass</label><br>
+                <input type="checkbox" id="tickettype" name="tickettype" value="tickettype">
+                <label for="childpass">Child pass</label><br>
+                <input type="checkbox" id="tickettype" name="tickettype" value="tickettype">
+                <label for="foreignerpass">Foreigner pass</label><br>
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Number of adults & children</legend>
+            <form>
+                <br>
+                <label for="adultnum">Number of adults</label>
+                <input type="number" id="adultnum" name="adultnum" min="1" max="100"><br><br>
+                <label for="childtnum">Number of children</label>
+                <input type="number" id="childtnum" name="childnum" min="1" max="100"><br><br>
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Please choose the duration</legend>
+            <form>
+                <br>
+                <label for="duration">Duration</label>
+                <select id="duration" name="duration">
+                    <option value="3h">3 hours</option>
+                    <option value="1/2day">1/2 day</option>
+                    <option value="1day">Full day</option>
+                    <option value="2days">2 days</option>
+                </select>
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+        <legend>Extras</legend>
+        <form>
+            <br>
+            <input type="radio" id="extras" name="extras" value="extras">
+            <label for="ap">Annual pass</label><br>
+            <input type="radio" id="extras" name="extras" value="extras">
+            <label for="ft">Food token</label><br>
+        </form>
+    </fieldset>
+    <br>
+    <br>
+    <button type="submit" name="submit" id="submit" onlclick="Function()">Add to order</button>  
+    <button type="submit" name="submit" id="submit" onlclick="Function()">Place order</button>  
+    <br>
+    <br>
+    </form>

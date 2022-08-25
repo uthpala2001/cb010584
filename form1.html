@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/form1.css">
+        <title>Booking</title>
+        <link rel="icon" type="image/png" href="./favicon-16x16.png">     
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="icon" href="Wages\logo.png">
+        <link rel="mask-icon" href="favicons/android-chrome-200x200.png" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="container">
+            <div class="topnav">
+                <img src="logo.png" class="logo">
+                <br> 
+            <section class="topnav">
+                <br>
+                <a href="home page.html">Home</a>
+                <a href="types of wild life attractions.html">Wild life attractions</a>
+                <a href="beaches page.html">Beaches</a>
+                <a class="active" href="activity page.html">Activities</a>
+                <a href="heritage locations.html">Heritage locations</a>
+                <a href="hotel contact page.html">Hotel details</a>
+                <a href="purches & donations.html">Shop</a>
+            </section>
+            
+<head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+<body>
+    <!--Header and Menu Section-->
+    
+
+    <!--Booking Section-->
+    <main class="main-content container">
+            <div class="booking-content">
+                <h1>Ticket Booking..</h1>
+            </div>
+
+
+            <div class="booking-form">
+                <div id="booking-going-on">
+                        <h3>Booking</h3>
+                    <div class="input-group">
+                        <label for="">Name</label>
+                        <input id="flying-from-input" class="inp-style" type="text" name="">
+                    </div>
+                    <div class="input-group">
+                        <label for="">Email</label>
+                        <input id="flying-to-input" class="inp-style" type="text" name="">
+                    </div>
+                    <div class="inputs">
+                        <div class="input-group">
+                            <label for="">Booking date</label>
+                            <input id="departure-input" class="inp-style" type="date" name="" required="required">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Duration</label>
+                            <input id="return-input" class="inp-style" type="time" name="" required="required">
+                        </div>
+                        <div class="input-group">
+                            <label for="">Activities</label>
+                             <select>
+                                <option value="surfing">Surfing</option>
+                                <option value="hot air balloon rides">Hot air balloon rides</option>
+                                <option value="safari">Safari</option>
+                                <option value="hiking">Hiking</option>
+                             </select>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Choice of ticket</label>
+                             <select>
+                                <option value="local pass">Local pass</option>
+                                <option value="child pass">Child pass</option>
+                                <option value="foreigner pass">Foreigner pass</option>
+                             </select>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">Number of childrens (1000LKR)</label>
+                            <input id="first-class-count" class="inp-style inp-width" type="number" name="" value="0">
+                        </div>
+                        <div class="plus-minus-btn">
+                            <button
+                            onclick="handleTicketChange('first-class', true)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-plus"></i>
+                            </button>
+                            <button
+                            onclick="handleTicketChange('first-class', false)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                
+                    <div class="input-group f-class">
+                        <div>
+                            <label for="">number of adult (3000LKR)</label>
+                            <input id="economy-count"   class="inp-style inp-width"   type="number" name="" value="0">
+                        </div>
+    
+                        <div class="plus-minus-btn">
+                            <button
+                            onclick="handleTicketChange('economy', true)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-plus"></i>
+                            </button>
+    
+                            <button
+                            onclick="handleTicketChange('economy', false)"
+                            class="btn btn-default"
+                            >
+                            <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="calculations">
+                        <div class="amount">
+                            <div class="left">
+                                <p>Subtotal</p>
+                            </div>
+                            <div class="right">
+                                <p id="sub-total">LKR0</p>
+                            </div>
+                        </div>
+    
+                        <div class="amount">
+                            <div class="left">
+                                
+                            </div>
+                            <div class="right">
+                                <p id="tax-amount">LKR0</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="amount">
+                            <div class="left">
+                                <h4>Total</h4>
+                            </div>
+                            <div class="right">
+                                <p id="total">LKR0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="book-now" class="btn-style">
+                        Book Now
+                    </button>
+                </div>
+
+                <div style="padding: 2em 0; margin: 10em 2em;" id="booking-successful">
+                    <h3 style="text-align: center;">Thank you so much!</h3>
+                    <h5 style="text-align: center; color: lawngreen">You have successfully completed your booking.</h5>
+                    <hr>                 
+                    
+                <div>
+            </div>   
+    </main>
+
+    <!--Thank You-->
+    
+<script src="script/form1.js"></script>
+</body>
+</html>
